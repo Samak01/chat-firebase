@@ -1,0 +1,388 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+/* registration */
+.form_register{
+    background: rgb(34,193,195);
+    background: linear-gradient(103deg, rgba(34,193,195,1) 0%, rgba(142,45,253,0.9417892156862745) 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_register  .form_container{
+    padding: 20px;
+    background: rgba(193, 195, 169, 0.699);
+    border-radius: 15px;
+    min-width: 350px;
+    
+}
+
+.form_register  .form_container .form_header {
+    text-align: center;
+    padding: 10px;
+}
+
+
+.form_container .form_header h1{
+    font-weight: 300;
+    opacity: 0.8;
+    margin: 10px;
+}
+
+.form_container .form_header p{
+    opacity: 0.7;
+    margin-bottom: 30px;
+}
+
+
+.form_register   form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.form_register   form input{
+    height: 32px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    background: rgba(57, 53, 53, 0.2);
+    border-bottom: 1px solid black;
+    color: white;
+    font-size: 18px;
+}
+
+.form_register   form input::placeholder{
+    color: white;
+    opacity: 0.4;
+}
+
+.form_register   form .file{
+    display: none;
+}
+
+.form_register   form label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.form_register   form img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}
+
+.form_register   form label span{
+    padding: 10px;
+    opacity: 0.7;
+}
+
+
+.form_register   form button{
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    background: rgba(0,0,0,0.2);
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.form_register   form button:hover{
+    transform: scale(1.06);
+}
+
+.form_register  .form_container p{
+    opacity: 0.7;
+    margin-top: 20px
+}
+
+.form_register  .form_container p a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+/* -------------------------------------------------------------------------------------- */
+/* login */
+
+
+/* home */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container .wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+/* -------------------------------------------------------------------------------------- */
+/* sidebar */
+.sidebar{
+    flex: 1;
+    background: rgb(16, 40, 41);
+    color: white;
+    border-right: 1px soid white;
+}
+
+.navbar{
+    background: rgb(8, 23, 82);
+    padding: 10px;
+    border-bottom: 1px solid white;
+
+}
+
+.navbar .navbar_container{
+    height: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    font-size: 18px;
+    color: blanchedalmond;
+}
+
+.navbar .user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.navbar .user  img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.navbar .user button{
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.navbar .user button:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* search */
+.search{
+    padding: 10px;
+    /* border-bottom: 1px solid white; */
+}
+
+.search .search_user input{
+    height: 24px;
+    background: transparent;
+    width: 90%;
+    border: none;
+    outline: none;
+    margin: 10px;
+    border-bottom: 1px solid rgb(57, 53, 135);
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+}
+
+.search .user_chat{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.search .user_chat:hover{
+    background: rgb(12, 17, 36);
+
+}
+
+.search .user_chat img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.search .user_chat .user_info p{
+    opacity: 0.4;
+}
+
+
+
+
+.chat{
+    flex: 2.2;
+}
+
+.chat .chat_header {
+    background: rgb(99, 112, 165);
+    padding: 10px;
+    /* border-bottom: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    /* border-bottom: 1px solid white; */
+}
+
+.chat .chat_header .name_user{
+    font-size: 20px;
+    color: white;
+}
+
+.chat .chat_header .icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.chat .chat_header .icons span:hover{
+    color: rgb(10, 54, 10);
+}
+
+
+
+/* -======================================================================================== */
+/* messages */
+.message .message_container{
+    height: calc(100vh - 142px);
+    overflow-y: scroll;    
+}
+
+.message .message_container .user_chat{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+.message .message_container .user_chat.owner{
+    flex-direction: row-reverse;
+    
+}
+
+.message .message_container .user_chat.owner .message_content p{
+    border-radius: 10px 0 10px 10px;
+
+}
+
+.message .message_container .user_chat .message_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.message .message_container .user_chat .message_info img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.message .message_container .user_chat .message_info span{
+    opacity: 0.6;
+    padding: 3px;
+}
+
+.message .message_container .user_chat .message_content{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    max-width: 80%;
+}
+
+.message .message_container .user_chat.owner .message_content{
+    align-items: flex-end;
+}
+
+.message .message_container .user_chat .message_content p{
+    padding: 10px 20px;
+    border-radius: 0 10px 10px 10px;
+    margin: 5px;
+    max-width: max-content;
+    background: rgb(181, 161, 161);
+}
+.message .message_container .user_chat .message_content img{
+    width: 50%;
+    border-radius: 15px;
+}
+
+
+
+/* ====================================================================== */
+/* sendmessage */
+.send_message{
+    background: rgb(216, 217, 225);
+    padding: 10px;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.send_message .input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.send_message .input input{
+    height: 35px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    padding-left: 20px;
+}
+
+.send_message .input .send_icon{
+    display: flex;
+    gap: 25px;
+    padding: 10px;
+    
+}
+
+.send_message .input .send_icon span{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.send_message .input .send_icon .send_files{
+    transform: rotate(90deg);
+}
